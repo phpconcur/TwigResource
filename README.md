@@ -4,7 +4,7 @@ Resource handling for Twig templates
 
 
 
-## Examplesd
+## Example Template
 
 *bast.twig*
 ```html
