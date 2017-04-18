@@ -6,6 +6,14 @@ Resource handling for Twig templates
 
 ## Example Template
 
+*index.php*
+```php
+$loader = new Twig_Loader_Filesystem('/path/to/templates');
+$twig = new Twig_Environment($loader);
+$twig->addExtension ( new Concur\Resource\Twig () );
+echo $twig->render('home.twig');
+```
+
 *bast.twig*
 ```html
 <!DOCTYPE html>
