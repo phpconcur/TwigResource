@@ -1,0 +1,26 @@
+{
+    "name": "concur/twig-resource",
+    "type": "library",
+    "description": "Resource handling for Twig templates",
+    "keywords": ["twig","resource", "css", "js"],
+    "homepage": "https://github.com/phpconcur/twig-resource",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Chase",
+            "email": "concur@sirmonkeys.com",
+            "homepage": "https://sirmonkeys.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.0",
+        "twig/twig": "^1.18|^2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Concur": "src"
+        }
+    }
+}
