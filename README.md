@@ -14,7 +14,7 @@ $twig->addExtension ( new Concur\Resource\Twig () );
 echo $twig->render('home.twig');
 ```
 
-*bast.twig*
+*base.twig*
 ```html
 <!DOCTYPE html>
 <html lang="en">
