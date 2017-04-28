@@ -24,7 +24,7 @@ echo $twig->render('home.twig');
 {% resource JS '/js/jquery.min.js' %}
 {% resource JS '/js/bootstrap.min.js' %}
 
-{% for c in {{ ResourceList('CSS') }} %}
+{% for c in ResourceList('CSS')  %}
   <link rel="stylesheet" type="text/css" href="{{ c.name }}" />
 {% endfor %}  
 </head>
@@ -32,7 +32,7 @@ echo $twig->render('home.twig');
 {% block body %}
 {% endblock %}
 
-{% for s in {{ ResourceList('JS') }} %}
+{% for s in ResourceList('JS') %}
   <script src="{{ s.name }}" ></script>
 {% endfor %}
 </body>
