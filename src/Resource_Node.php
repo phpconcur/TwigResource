@@ -14,6 +14,11 @@ class Resource_Node extends \Twig_Node {
 		
 		$this->twigpath = $twigpath;
 	}
+	/**
+	 * $compiler is requirec by Twig_Node
+	 *
+	 * @SuppressWarnings("PHPMD.UnusedFormalParameter")
+ 	*/
 	public function compile(\Twig_Compiler $compiler) {
 		$filename = $this->getNode ( 'value' )->getAttribute ( 'value' );
 	    $this->twig->addResource ( $this->getAttribute ( 'name' ), $filename,$this->twigpath  );
