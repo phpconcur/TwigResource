@@ -18,15 +18,15 @@ class Twig extends \Twig_Extension {
 		];
 	}
 	public function ResourceList($group, $key = null) {
-		if ($key) {
-			$rl = [ ];
-			foreach ( $this->getResources ( $group ) as $res ) {
-				$rl [] = $res [$key];
-			}
-		} else {
-			$rl = $this->getResources ( $group );
+		if (empty($key)) {
+			return $this->getResources ( $group );
 		}
-		return $rl;
+		$resllist = [ ];
+		foreach ( $this->getResources ( $group ) as $res ) {
+			$resllist [] = $res [$key];
+		}
+		
+		return $resllist
 	}
 	public function getName() {
 		return 'Resource File Helper';
