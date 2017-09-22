@@ -26,7 +26,7 @@ class Twig extends \Twig_Extension {
 			$resllist [] = $res [$key];
 		}
 		
-		return $resllist
+		return $resllist;
 	}
 	public function getName() {
 		return 'Resource File Helper';
